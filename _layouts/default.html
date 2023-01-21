@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- HTML Meta Tags -->
+    <title>{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="{{ site.title }}">
+    <meta itemprop="description" content="{{ site.description }}">
+    <meta itemprop="image" content="{{ site.image }}">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ site.title }}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:image" content="{{ site.image }}">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ site.title }}">
+    <meta name="twitter:description" content="{{ site.description }}">
+    <meta name="twitter:image" content="{{ site.image }}">
+
+    <!-- Meta Tags Generated via https://heymeta.com -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sanitize.css@12/page.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css">
+    <link rel="canonical" href="{{ site.url }}">
+</head>
+
+<body>
+    <article>
+        <div class="container">
+            {{ content }}
+        </div>
+    </article>
+</body>
+
+</html>
